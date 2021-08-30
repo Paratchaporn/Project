@@ -8,7 +8,7 @@
 * 💥 Fun fact: I love to design 
 
 ### ABOUT ME
-* [Resume](https://drive.google.com/file/d/10mIKFOAATUDiBUOBq65igGDNZwsyRdyM/view)
+* [Resume](https://www.canva.com/design/DAEmfn2-Zws/Nfi4T1hkYPKsq3FyyNQGPQ/view?utm_content=DAEmfn2-Zws&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 * [Certificate](https://drive.google.com/drive/folders/1imYcK3777P9R6aYOUNU9D5dQKAmOpXv0?usp=sharing) 
 
 ### Languages and Tools
