@@ -8,5 +8,5 @@ I'm Jern, Digital engineering student at SIIT Thammasat U.
 * Fun fact: I love to design 
 
 ## ABOUT ME
-[Resume](https://drive.google.com/file/d/10mIKFOAATUDiBUOBq65igGDNZwsyRdyM/view)
-[Certificate](https://drive.google.com/drive/folders/1imYcK3777P9R6aYOUNU9D5dQKAmOpXv0?usp=sharing)
+* [Resume](https://drive.google.com/file/d/10mIKFOAATUDiBUOBq65igGDNZwsyRdyM/view) *
+* [Certificate](https://drive.google.com/drive/folders/1imYcK3777P9R6aYOUNU9D5dQKAmOpXv0?usp=sharing) *
