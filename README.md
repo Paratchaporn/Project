@@ -1,6 +1,6 @@
 #  ✨Nice to meet you✨
 
-##  I'm Jern, digital engineering student at SIIT Thammasat U.😃
+##  😃I'm Jern, digital engineering student at SIIT Thammasat U.
 
 * 🌱 I'm currently working on website development  project 
 * 📌 I’m interested in web development and ux/ui design
@@ -12,3 +12,4 @@
 * [Certificate](https://drive.google.com/drive/folders/1imYcK3777P9R6aYOUNU9D5dQKAmOpXv0?usp=sharing) 
 
 ### Languages and Tools
+<img height = "32" width = "32" src ="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/[HTML5].svg"/>
