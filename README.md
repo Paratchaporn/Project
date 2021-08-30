@@ -12,5 +12,4 @@
 * [Certificate](https://drive.google.com/drive/folders/1imYcK3777P9R6aYOUNU9D5dQKAmOpXv0?usp=sharing) 
 
 ### Languages and Tools
-<img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/[HTML5].svg" />
-<img height="32" width="32" src="https://unpkg.com/simple-icons@v5/icons/[HTML5].svg" />
+
