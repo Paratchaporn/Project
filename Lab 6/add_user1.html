@@ -1,0 +1,150 @@
+<!-- There are 13 Questions. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS326 Database Programming Laboratory</title>
+<link rel="stylesheet" href="default.css">
+</head>
+
+
+<body>
+<div id="wrapper"> 
+	<div id="div_header">
+		CSS326 Student Registration
+	</div>
+	<div id="div_subhead">
+	
+	</div>
+	
+	<div id="div_main">
+		<div id="div_menu">
+			<ul id="menu">
+			
+			
+			<!-- Q1. create  five lists for  urls to be linked:
+			The urls are Home, User Profile, User Group, Add User and Add User Group.
+			  -->
+			  <!-- for example -->
+			    <li><a href="user.php">Home</a></li>
+			    <!--  Answer Here -->
+                <li><a href="user.php">User Profile</a></li>
+                <li><a href="user.php">User Group</a></li>
+                <li><a href="user.php">Add User</a></li>
+                <li><a href="user.php">User Group</a></li>
+
+
+			</ul>		
+		</div>
+
+		<div id="div_content" class="form">
+			
+			<form action="user.php" method="post">
+				<h2>User Profile</h2>
+				<label>Title</label>
+				
+				<!-- Q2. create a combo box that contains options: Mr., Mrs and Ms.
+					The options have their values Mr, Mrs. and Ms. respectively
+				 -->
+				 <!--  Answer Here -->
+                 <select name="title">
+					<option value="Mr.">Mr.</option>
+					<option value="Mrs.">Mrs.</option>
+					<option value="Ms.">Ms.</option>
+				</select>
+
+				<label>First name</label>
+				
+				<!-- Q3. create a text box for first name and name it as firstname -->
+				<!-- Answer Here -->
+				<input type="text" name="firstname">
+				
+					
+				<label>Last name</label>
+				
+				<!-- Q4. create a text box for last name and name it as lastname -->
+				<!-- Answer Here -->
+                <input type="text" name= "lastname">
+				
+				
+
+				<label>Birth Date</label>
+				<!-- Q5. create date box for birth date and name it as birth -->
+				<!-- Answer Here -->
+                <input type="date" id="birthday" name="birth">
+				
+				
+				
+				<label>Email</label>
+				
+				<!-- Q6. create a text box for email and name it as email -->
+				<!-- Answer Here -->
+				<input type="text" name= "email">
+				
+				<label>Emergency Contact Person</label>
+				
+				<!-- Q7. create text box for Emergency Contact Person and name it as emergencycontact -->
+				<!-- Answer Here -->
+                <input type="text" name= "emergencycontact">
+				
+				
+				<h2> Account Profile</h2>
+				<label>Username</label>
+				
+				
+				<!-- Q8. create text box for Username and name it as username -->
+				<!-- Answer Here -->
+				<input type="text" name= "username">
+				
+				
+
+				<label>Password</label>
+				
+				
+				<!-- Q9. create password box for Password and name it as passwd -->
+				<!-- Answer Here -->
+				<input type="password" name= "passwd">
+				
+				<label>*Confirm password</label>
+				
+				<!-- Q10. create password box for Confirm password and name it as cpasswd -->
+				<!-- Answer Here -->
+                <input type="password" name= "cpasswd">
+				
+				
+				<label>User group</label>
+				
+				<!-- Q11. create a combo box for User group  that contains options: Instructor, Student and TA
+					The options have their values Instructor, Student and TA respectively
+				 -->
+				 <!--  Answer Here -->
+                 <select name="User Group">
+					<option value="Instructor">Instructor</option>
+					<option value="Student">Student</option>
+					<option value="TA">TA</option>
+				</select>
+				
+				
+				
+				<label>*Remember your password</label>
+				
+				<!-- Q12. create a check box for Remember your password.
+				 name it as Delete and give value "1" -->
+				<!-- Answer Here -->
+				<input type="checkbox" name="Delete" value="1">
+				
+				
+				<div class="center">
+				
+				
+				<!-- Q13. create a submit button and give value "Submit"-->
+				<!-- Answer Here -->
+                <input type="submit" value="Submit">	
+				</div>
+			</form>
+
+		</div> <!-- end div_content -->
+	</div> <!-- end div_main -->
+</div>
+</body>
+</html>

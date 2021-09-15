@@ -1,0 +1,232 @@
+1.CREATE DATABASE University;
+2.
+
+CREATE TABLE instructor 
+ (instructor_ID int(10) primary key,
+  name varchar(20),
+  salary int(10));
+
+CREATE TABLE advisor
+ (Student_ID int(10),
+  instructor_ID int(10));
+
+CREATE TABLE student
+ (Student_ID int(10) primary key,
+  Name varchar(20),
+  tot_cred int(10));
+
+CREATE TABLE teaches
+ (Instructor_ID int(10),
+  Course_ID int(10),
+  Sec_ID int(10),
+  Semester int(10),
+  Year int(10));
+
+CREATE TABLE takes
+ (Student_ID int(10),
+  Course_ID int(10),
+  Sec_ID int(10),
+  Semester int(10),
+  year int(10),
+  Grade varchar(5));
+
+CREATE TABLE Course (
+ Course_ID int(10) primary key, 
+Title varchar(20), 
+Sec_ID int(10), 
+Credits int(10));
+
+CREATE TABLE Sec_course
+ (Course_ID int(10),
+  Sec_ID int(10),
+  Semester int(10),
+  Year int(10));
+
+CREATE TABLE Section
+ (Sec_ID int(10),
+  Semester int(10),
+  Year int(10));
+------------------------------------------------------
+2.
+
+a.INSTRUCTOR TABLE
+
+INSERT INTO instructor(instructor_ID, name, salary) VALUES (10101,'Srinivasan',25000);
+INSERT INTO instructor(instructor_ID, name, salary) VALUES (22222,'Einstein',40000);
+INSERT INTO instructor(instructor_ID, name, salary) VALUES (45565,'Katz',35000);
+INSERT INTO instructor(instructor_ID, name, salary) VALUES (76543,'Singh',35000);
+INSERT INTO instructor(instructor_ID, name, salary) VALUES (76766,'Crick',20000);
+INSERT INTO instructor(instructor_ID, name, salary) VALUES (98345,'Kim',15000);
+
+
+b. STUDENT TABLE
+
+INSERT INTO student(student_ID, name,tot_cred) VALUES (128,"Zhang",23);
+INSERT INTO student(student_ID, name,tot_cred) VALUES (12345,"Shanker",23);
+INSERT INTO student(student_ID, name,tot_cred) VALUES (23121,"Chavez",24);
+INSERT INTO student(student_ID, name,tot_cred) VALUES (44553,"Peltier",26);
+INSERT INTO student(student_ID, name,tot_cred) VALUES (76543,"Brown",20);
+INSERT INTO student(student_ID, name,tot_cred) VALUES (76653,"Aoi",22);
+INSERT INTO student(student_ID, name,tot_cred) VALUES (98988,"Tanaka",26);
+
+c. ADVISOR TABLE
+
+INSERT INTO advisor(student_ID, instructor_ID) VALUES (128, 45565);
+INSERT INTO advisor(student_ID, instructor_ID) VALUES (12345, 45565);
+INSERT INTO advisor(student_ID, instructor_ID) VALUES (23121, 76543);
+INSERT INTO advisor(student_ID, instructor_ID) VALUES (44553, 22222);
+INSERT INTO advisor(student_ID, instructor_ID) VALUES (76543, 10101);
+INSERT INTO advisor(student_ID, instructor_ID) VALUES (76653, 98345);
+INSERT INTO advisor(student_ID, instructor_ID) VALUES (98988, 76766);
+
+d. COURSE TABLE
+
+INSERT INTO course(course_ID, title,credits) VALUES (100,"Python",3);
+INSERT INTO course(course_ID, title,credits) VALUES (103,"Java",3);
+INSERT INTO course(course_ID, title,credits) VALUES (231,"Data structure",3);
+INSERT INTO course(course_ID, title,credits) VALUES (326,"Database",3);
+
+e. SECTION TABLE
+
+INSERT INTO section(sec_ID, semester, year) VALUES (1, 1, 2021);
+INSERT INTO section(sec_ID, semester, year) VALUES (2, 1, 2021);
+INSERT INTO section(sec_ID, semester, year) VALUES (3, 1, 2021);
+INSERT INTO section(sec_ID, semester, year) VALUES (1, 2, 2020);
+INSERT INTO section(sec_ID, semester, year) VALUES (2, 2, 2020);
+INSERT INTO section(sec_ID, semester, year) VALUES (3, 2, 2020);
+
+f. SEC_COURSE TABLE
+
+INSERT INTO sec_course(course_ID, sec_ID,semester,year) VALUES (100,1,2,2020);
+INSERT INTO sec_course(course_ID, sec_ID,semester,year) VALUES (100,2,2,2020);
+INSERT INTO sec_course(course_ID, sec_ID,semester,year) VALUES (100,3,2,2020);
+INSERT INTO sec_course(course_ID, sec_ID,semester,year) VALUES (100,1,1,2021);
+INSERT INTO sec_course(course_ID, sec_ID,semester,year) VALUES (100,2,1,2021);
+INSERT INTO sec_course(course_ID, sec_ID,semester,year) VALUES (100,3,1,2021);
+INSERT INTO sec_course(course_ID, sec_ID,semester,year) VALUES (103,1,2,2020);
+INSERT INTO sec_course(course_ID, sec_ID,semester,year) VALUES (103,2,2,2020);
+INSERT INTO sec_course(course_ID, sec_ID,semester,year) VALUES (103,3,2,2020);
+INSERT INTO sec_course(course_ID, sec_ID,semester,year) VALUES (231,1,1,2021);
+INSERT INTO sec_course(course_ID, sec_ID,semester,year) VALUES (231,2,1,2021);
+INSERT INTO sec_course(course_ID, sec_ID,semester,year) VALUES (231,3,1,2021);
+INSERT INTO sec_course(course_ID, sec_ID,semester,year) VALUES (326,1,1,2021);
+INSERT INTO sec_course(course_ID, sec_ID,semester,year) VALUES (326,2,1,2021);
+INSERT INTO sec_course(course_ID, sec_ID,semester,year) VALUES (326,3,1,2021);
+
+
+g. TAKES TABLE
+
+INSERT INTO takes (Student_ID,Course_ID,Sec_ID,Semester,year,Grade) VALUES (128, 100, 1, 2, 2020,'A');
+INSERT INTO takes (Student_ID,Course_ID,Sec_ID,Semester,year,Grade) VALUES (128, 103, 2, 2, 2020,'B');
+INSERT INTO takes (Student_ID,Course_ID,Sec_ID,Semester,year,Grade) VALUES (128, 231, 1, 1, 2021,'B');
+INSERT INTO takes (Student_ID,Course_ID,Sec_ID,Semester,year,Grade) VALUES (12345, 103, 1, 2, 2020,'A');
+INSERT INTO takes (Student_ID,Course_ID,Sec_ID,Semester,year,Grade) VALUES (12345, 326, 2, 1, 2021,'A');
+INSERT INTO takes (Student_ID,Course_ID,Sec_ID,Semester,year,Grade) VALUES (23121, 231, 3, 1, 2021,'B');
+INSERT INTO takes (Student_ID,Course_ID,Sec_ID,Semester,year,Grade) VALUES (44553, 103, 1, 2, 2020,'A');
+INSERT INTO takes (Student_ID,Course_ID,Sec_ID,Semester,year,Grade) VALUES (44553, 326, 2, 1, 2021,'B');
+INSERT INTO takes (Student_ID,Course_ID,Sec_ID,Semester,year,Grade) VALUES (76543, 103, 3, 2, 2020,'B');
+INSERT INTO takes (Student_ID,Course_ID,Sec_ID,Semester,year,Grade) VALUES (76543, 326, 1, 1, 2021,'A');
+INSERT INTO takes (Student_ID,Course_ID,Sec_ID,Semester,year,Grade) VALUES (76653, 100, 2, 2, 2020,'B');
+INSERT INTO takes (Student_ID,Course_ID,Sec_ID,Semester,year,Grade) VALUES (76653, 231, 1, 1, 2021,'A');
+INSERT INTO takes (Student_ID,Course_ID,Sec_ID,Semester,year,Grade) VALUES (98988, 103, 3, 2, 2020,'A');
+INSERT INTO takes (Student_ID,Course_ID,Sec_ID,Semester,year,Grade) VALUES (98988, 326, 3, 1, 2021,'A');
+INSERT INTO takes (Student_ID,Course_ID,Sec_ID,Semester,year,Grade) VALUES (23121, 100, 3, 2, 2020,'C');
+
+h. TEACHES TABLE
+
+INSERT INTO `teaches`(`instructor_ID`, `course_ID`,`sec_ID`,`semester`,`year`) VALUES (45565,100,1,2,2020);
+INSERT INTO `teaches`(`instructor_ID`, `course_ID`,`sec_ID`,`semester`,`year`) VALUES (45565,100,2,2,2020);
+INSERT INTO `teaches`(`instructor_ID`, `course_ID`,`sec_ID`,`semester`,`year`) VALUES (76543,100,2,2,2020);
+INSERT INTO `teaches`(`instructor_ID`, `course_ID`,`sec_ID`,`semester`,`year`) VALUES (76543,100,3,1,2021);
+INSERT INTO `teaches`(`instructor_ID`, `course_ID`,`sec_ID`,`semester`,`year`) VALUES (22222,103,3,2,2020);
+INSERT INTO `teaches`(`instructor_ID`, `course_ID`,`sec_ID`,`semester`,`year`) VALUES (22222,231,1,1,2021);
+INSERT INTO `teaches`(`instructor_ID`, `course_ID`,`sec_ID`,`semester`,`year`) VALUES (10101,103,2,2,2020);
+INSERT INTO `teaches`(`instructor_ID`, `course_ID`,`sec_ID`,`semester`,`year`) VALUES (10101,231,2,1,2021);
+INSERT INTO `teaches`(`instructor_ID`, `course_ID`,`sec_ID`,`semester`,`year`) VALUES (98345,326,1,1,2021);
+INSERT INTO `teaches`(`instructor_ID`, `course_ID`,`sec_ID`,`semester`,`year`) VALUES (76766,326,2,1,2021);
+
+-----------------------------------------------------------------------------------------
+3.
+ALTER TABLE section ADD INDEX(sec_ID);
+ALTER TABLE takes ADD INDEX(sec_ID);
+ALTER TABLE sec_course ADD INDEX(section_ID);
+ALTER TABLE teaches ADD INDEX(sec_ID);
+
+4.
+
+ALTER TABLE advisor ADD FOREIGN KEY (instructor_ID) REFERENCES instructor(instructor_ID) ON DELETE CASCADE;
+ALTER TABLE teaches ADD FOREIGN KEY (instructor_ID) REFERENCES instructor(instructor_ID)ON DELETE CASCADE;
+
+ALTER TABLE advisor ADD FOREIGN KEY (student_ID) REFERENCES student(student_ID) ON DELETE CASCADE;
+ALTER TABLE takes ADD FOREIGN KEY (student_ID) REFERENCES student(student_ID) ON DELETE CASCADE;
+
+ALTER TABLE sec_course ADD FOREIGN KEY (course_ID) REFERENCES course(course_ID) ON DELETE CASCADE;
+
+ALTER TABLE sec_course ADD FOREIGN KEY (sec_ID) REFERENCES section(sec_ID) ON DELETE CASCADE;
+ALTER TABLE takes ADD FOREIGN KEY (sec_ID) REFERENCES section(sec_ID) ON DELETE CASCADE;
+ALTER TABLE teaches ADD FOREIGN KEY (sec_ID) REFERENCES section(sec_ID) ON DELETE CASCADE;
+
+5.
+
+
+
+6.
+SELECT DISTINCT i.name, t.course_ID, t.semester FROM instructor i, teaches t WHERE i.instructor_ID = t.instructor_ID AND t.semester = 2 AND t.course_ID = 100;
+
+7.SELECT student.name FROM ((student INNER JOIN advisor ON student.student_ID = advisor.student_ID) INNER JOIN instructor ON instructor.instructor_ID = advisor.instructor_ID) WHERE instructor.name = 'Katz';
+
+8.
+SELECT DISTINCT s.student_ID, s.name, t.grade, s.tot_cred FROM student s LEFT JOIN takes t ON s.student_ID = t.student_ID WHERE t.grade = 'A' AND s.tot_cred >= 23 ORDER BY s.student_ID;
+
+9.
+SELECT student.name, instructor.name, course.title FROM instructor,student,course,takes,teaches WHERE instructor.name LIKE 'S%' AND student.student_ID = takes.student_ID AND takes.course_ID= course.course_ID AND instructor.instructor_ID = teaches.instructor_ID AND teaches.course_ID = course.course_ID ORDER BY course.title DESC, instructor.name;
+
+10.SELECT student.Name, course.Title 
+FROM student, course 
+WHERE Title IN ('Data structure',' Database');
+
+11.
+SELECT i.name FROM ( (instructor i inner join teaches t on i.instructor_ID = t.instructor_ID) Inner Join course c on t.course_ID = c.course_ID) GROUP BY i.name having count(*)>1;
+
+12.
+SELECT DISTINCT instructor.name FROM (instructor INNER JOIN advisor ON instructor.instructor_ID = advisor.instructor_ID) WHERE advisor.student_ID IS NOT NULL;
+
+13.
+SELECT instructor.name, student.name FROM ((advisor INNER JOIN instructor ON instructor.instructor_ID = advisor.instructor_ID)INNER JOIN student ON student.student_ID = advisor.student_ID);
+
+14.
+SELECT DISTINCT c.title FROM course c INNER JOIN sec_course sc ON c.course_ID = sc.course_ID WHERE sc.year = '2021' GROUP BY c.course_ID ORDER BY title DESC;
+
+
+15.
+SELECT DISTINCT c.title FROM course c INNER JOIN sec_course sc ON c.course_ID = sc.course_ID WHERE sc.sec_ID > 1;
+
+16.
+SELECT DISTINCT c.title FROM course c LEFT JOIN sec_course s ON c.course_id = s.course_id WHERE s.semester = '2';
+
+17.
+SELECT DISTINCT instructor.name FROM instructor LEFT JOIN teaches ON instructor.instructor_ID = teaches.instructor_ID WHERE instructor.salary > (SELECT AVG(salary) FROM instructor) AND teaches.course_ID = '100';
+
+
+18.
+SELECT count(DISTINCT takes.student_ID) as STD_number FROM takes WHERE sec_ID = '3' ;
+
+19.
+
+UPDATE student,advisor,instructor
+SET student.tot_cred = student.tot_cred + 3
+WHERE student.student_ID = advisor.student_ID AND instructor.instructor_ID = advisor.instructor_ID AND instructor.name = "Katz";
+
+SELECT* FROM student;
+
+
+20.
+DELETE FROM takes WHERE takes.grade = "C";
+
+
+
+
+
+
+
+

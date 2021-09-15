@@ -1,0 +1,222 @@
+div#wrapper {
+	min-width:600px;
+	
+	padding-top: 0.3em;
+	
+	/*Q14. Set border to 1pixel solid line with black color*/
+	border: 1px, solid, black;
+	
+	/*Q15. Set background color to #3300cc*/  
+	background-color: #3300cc;
+	
+	/*Q16. Set margin to auto*/
+	margin: auto;
+	
+	
+	width: 60%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	
+}
+body {	
+    
+	/*Q17. Set background color to #355C7D*/
+	background-color: #355C7D;
+}
+
+div#div_main{
+	position:relative;	
+}
+
+div#div_header{
+	/*Q18. Set font size to 2em,
+	 font family to Arial,
+	 colour as white,
+	 font weight to 700,
+	 and font-variant to small-caps */
+	font-size: 2em;
+	font-family: Arail;
+    color: white;
+    font-weight: 700;
+    font-variant: small-caps;
+	padding:0.4em;
+	
+	
+	border-bottom: 1px;
+	border-bottom-color: #00bfff; 
+}
+
+div#div_subhead{
+	/*Q19. Set background colour to #66cccc and  height as 0.3 em*/
+	background-color: #66cccc;
+	height: 0.3em;
+
+	/*Q20. Set bottom border to 1 pixel, solid line, with color #66cccc*/
+	border-bottom: 1px, solid, #66cccc;
+    color: #66cccc;
+}
+
+div#div_menu{
+	width: 25%;
+	position:absolute;
+	top:0px;
+	left:0px;
+	bottom:0px;
+	
+	/*Q21. Set top padding to 1em so we have more space at the top of the menu*/
+	padding-top: 1em;
+	
+	
+	border-right: 1px solid #66cccc;
+}
+
+div#div_content{	
+	/*Q22. Set background color to white*/
+	background-color: white;
+	
+	
+	margin-left:25%; 
+	padding:1em 0;
+	min-height: 400px;
+}
+
+div#div_footer{
+	border-top: 1px solid #BF491F;
+	
+	
+	/*Q23. Set text alignment to center*/
+	text-align: center;
+	
+	
+	/*Q24. Set background color to #F27C38*/
+	background-color: #f27c38;
+	
+	/*Q25. Set padding of all sides to 1em*/
+	padding: 1em;
+}
+
+div#div_footer:before{
+	
+	content: "Theme adapted from";
+}
+
+ul#menu{
+	/*Q26. Set list-style-type to none to remove the bullets*/
+	list-style-type: none;
+	
+	/*Q27. Set padding of all sides to 0 so that the menu contacts the left border	*/
+	padding: 0;
+	
+	
+	border-top: 1px dotted white;
+}
+
+#menu li{
+	/*Q28. Set background color to #0080ff*/
+	background-color: #0080ff;
+	
+	
+	/*Q29. Set text align as center */
+	text-align: center;
+}
+
+#menu a{
+	display:block;
+	
+	
+	/*Q30. Set padding of all sides to 0.4em to make larger menu items*/
+	padding: 00.4em;
+	
+	/*Q31. Set bottom border to dotted and bottom border's color to be white and bottom border's width to be 1pixel.*/
+	border-bottom: dotted,white,1px;
+	
+	
+	/*Q32. Set font weight to bold*/
+	font-weight: bold;
+}
+
+#menu a:link, #menu a:visited{
+	/*Q33. Set text-decoration to none to remove link underlines*/
+	 text-decoration: none;
+	 
+	 
+	/*Q34. Set font color to #03254c*/
+	color: #03254c;
+	
+	
+	/*Q35. Set background-color as #66cccc*/
+	background-color: #66cccc;
+	
+}
+
+#menu a:hover, #menu a:active{
+	
+	/*Q36. Set background-color as blue and font colour as white; */
+	background-color: blue;
+    color: white;
+	
+	
+	
+	border-bottom: 1px solid #355C7D;
+}
+
+h2{
+	
+	font-weight:bold;
+	margin-top:0.4em;
+	margin-bottom:0.4em;
+	border-bottom:1 px;
+	color: blue;
+	
+	/*Q37. Set left padding to 1em so we have little indentation*/
+	padding-left: 1em;
+}
+
+.form label{
+	display: block;
+	
+	/*Q38. Align the text to the right*/
+	text-align: right;
+	
+	/*Q39. Set text to bold*/
+	font-weight: bold;
+	
+	/*Q40. Fix the width to 200px.*/
+	width: 200px;
+	
+	/*Q41. Set float property to left so that the labels are on the left of text fields*/
+	float: left;
+	
+	
+	margin-right:10px;
+}
+
+.form input{
+	padding: 4px 2px;
+	margin: 2px 2px 10px 10px;
+}
+
+.form input[type="text"], .form input[type="password"]{
+	display:block;
+	width:200px;	
+}
+.form input[type="submit"]{
+	width: 180px;
+	background-color: #66cccc;
+	font-weight: 100;
+}
+
+.form input[type="checkbox"]{
+	display:block;
+	margin: 2px 2px 10px 210px;
+}
+
+.form select{
+	padding: 4px 2px;
+	display:block;
+	margin: 2px 2px 10px 10px;
+}
+
+.center{
+	text-align:center;
+}
