@@ -523,7 +523,7 @@ input[type = checkbox]{
 /*----------------------------------------*/
 
 footer{
-    background-color: #d2c0a9;
+    background-color: #baa697;
     padding: 50px;
     font-size: 8;
 }
@@ -554,7 +554,7 @@ footer{
 .social-links li a:visited{
     text-decoration: none;
     border: 0;
-    color: #888;
+    color: white;
     transition: color 0.2s;
 }
 .footer-nav li a:hover,
@@ -578,7 +578,7 @@ footer{
     
 }
 footer p{
-    color: #888;
+    color: white;
     text-align: center;
 
     margin-top: 30px;
